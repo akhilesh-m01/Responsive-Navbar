@@ -23,12 +23,14 @@ const Navbar = () =>{
 
             {/* small screens */}
             <div className="flex flex-col md:hidden list-none">
-                <button onClick={toggleHandler} className='flex'>Menu</button>
+                <button onClick={toggleHandler} className='mx-auto'>Menu</button>
                 <div className={`${open?'hidden':'block'} bg-slate-500 text-white`}>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Experience</li>
-                    <li>Contact</li>
+                    <div className='flex flex-col justify-center items-center'>
+                        <li>About</li>
+                        <li>Projects</li>
+                        <li>Experience</li>
+                        <li>Contact</li>
+                    </div>
                 </div>
             </div>
         </div>
